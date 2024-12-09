@@ -1,0 +1,140 @@
+/* Header Container */
+.navbar-header {
+    font-family: Arial, sans-serif;
+}
+
+/* Top Section */
+.navbar-top {
+    background-color: #f0f0f0; /* Light gray background */
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.navbar-offer {
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.navbar-offer-icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #333;
+    color: #fff;
+    font-size: 0.8rem;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 3px;
+    margin-right: 5px;
+}
+
+.navbar-shop-link {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.navbar-shop-link:hover {
+    text-decoration: underline;
+}
+
+/* Main Navbar */
+.navbar-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    position: relative;
+    width: 100%;
+    max-width: 1360px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* Logo */
+.navbar-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Center Links */
+.navbar-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.navbar-link {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.navbar-link:hover {
+    color: #007bff;
+}
+
+/* Right Side Icons */
+.navbar-icons {
+    display: flex;
+    gap: 1.5rem;
+    font-size: 1.2rem;
+}
+
+.navbar-icon {
+    cursor: pointer;
+    color: #333;
+}
+
+.navbar-icon:hover {
+    color: #007bff;
+}
+
+/* Hamburger Menu (For Small Screens) */
+.navbar-menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 4px;
+}
+
+.navbar-menu-bar {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    border-radius: 5px;
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+    /* Hide the navigation links by default on small screens */
+    .navbar-links {
+        display: none;
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+        background-color: #fff;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 1rem;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Show the navigation links when the menu is open */
+    .navbar-links-open {
+        display: flex;
+    }
+
+    /* Display the hamburger menu on small screens */
+    .navbar-menu-icon {
+        display: flex;
+    }
+
+    /* Right Icons for small screens */
+    .navbar-icons {
+        display: none;
+    }
+}
