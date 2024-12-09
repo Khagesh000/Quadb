@@ -7,6 +7,7 @@
     max-width: 1360px;
     margin: 0 auto;
     overflow: hidden;
+    background-color: #F5F6FA;
 }
 
 /* Container for the images */
@@ -21,8 +22,8 @@
 
 /* Arrow buttons styled as circles */
 .homepagebanner-arrow {
-    background: rgba(173, 172, 172, 0.5);
-    color: white;
+    background: #ffffff;
+    color: #6c7275;
     font-size: 24px;
     padding: 12px;
     border: none;
@@ -36,10 +37,12 @@
 
 .homepagebanner-arrow.left {
     left: 10px;
+    color: #6c7275;
 }
 
 .homepagebanner-arrow.right {
     right: 10px;
+    color: #6c7275;
 }
 
 /* Image styles */

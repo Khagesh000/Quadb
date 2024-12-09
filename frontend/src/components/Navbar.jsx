@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../assets/css/Navbar.css'; // Import the CSS file for styling
 
@@ -6,7 +6,7 @@ const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const toggleMenu = () => {
-        setIsMenuOpen(prevState => !prevState);
+        setIsMenuOpen((prevState) => !prevState);
     };
 
     const closeMenu = () => {

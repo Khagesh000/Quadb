@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import '../assets/css/HomePageBanner.css';
 
 // Correctly importing images
-import HomePageBanner1 from '../assets/images/HomePageBanner.jpg';
-import HomePageBanner2 from '../assets/images/HomePageBanner1.jpg';
-import HomePageBanner3 from '../assets/images/HomePageBanner2.jpg';
+import HomePageBanner1 from '../assets/images/HomePageBannerMain1.jpg';
+import HomePageBanner2 from '../assets/images/HomePageBannerMain1.jpg';
+import HomePageBanner3 from '../assets/images/HomePageBannerMain1.jpg';
 
 export default class HomePageBanner extends Component {
   state = {

@@ -1,0 +1,189 @@
+/* General styles for the HomePageDesign component */
+.homepage-design { 
+    color: #333;
+    max-width: 1360px;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: #F5F6FA;
+    margin-bottom: 5%;
+}
+
+/* Top Section */
+.homepage-top-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    gap: 16px;
+}
+
+.homepage-left-content h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    max-width: 500px;
+    font: 'poppins';
+    margin-left: 2%;
+}
+
+.homepage-right-content p {
+    font-size: 1.2rem;
+    max-width: 400px;
+    text-align: right;
+    margin: 0 2%;
+}
+
+/* Cards Section */
+.homepage-cards-section {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Card Base Styles */
+.homepage-card {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card-image {
+    margin-top: 2%;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Ensure the right-side image is fully visible */
+.rightside-image {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: white;
+}
+
+.card-overlay {
+    position: absolute;
+    color: #141718;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.card-overlay.top-left {
+    top: 10px;
+    left: 10px;
+}
+
+.card-overlay.bottom-left {
+    bottom: 10px;
+    left: 10px;
+}
+
+.card-overlay h2 {
+    height: 24px;
+    margin: 0 0 5px;
+    width: 100%;
+}
+
+.shop-link {
+    display: inline-block;
+    padding: 8px 16px;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    position: relative;
+}
+
+.shop-link::after {
+    content: ' →';
+    font-size: 1rem;
+}
+
+.shop-link:hover {
+    text-decoration: underline;
+}
+
+.bottom-text {
+    text-align: center;
+    font-size: 1rem;
+    color: #333;
+    text-decoration: underline;
+}
+
+/* Tall Card */
+.tall-card {
+    flex: 1;
+    height: 500px;
+}
+
+/* Rectangle Cards */
+.homepage-right-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+    width: 100%;
+}
+
+.rectangle-card {
+    flex: 1;
+    height: 240px;
+    position: relative;
+    width: 100%; /* Ensure cards take up full width within the container */
+}
+
+.homepage-right-cards .rectangle-card {
+    width: 100%; /* Increase the width of the card to fill the container */
+}
+
+.homepage-right-cards .rectangle-card:first-child {
+    margin-right: 0; /* Remove the right margin between cards */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .homepage-top-section {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .homepage-left-content h1,
+    .homepage-right-content p {
+        text-align: center;
+    }
+
+    .homepage-cards-section {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .tall-card {
+        height: 40vh;
+    }
+
+    .rectangle-card {
+        height: 30vh;
+    }
+
+    .card-image {
+        height: auto;
+    }
+
+    .card-overlay {
+        padding: 5px;
+    }
+
+    .homepage-left-content h1,
+    .homepage-right-content p {
+        text-align: center;
+    }
+
+    /* Ensuring the right-side cards are responsive */
+    .homepage-right-cards .rectangle-card {
+        width: 100%; /* Ensure the cards take up full width on smaller screens */
+    }
+}
