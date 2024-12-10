@@ -2,13 +2,14 @@ import React from 'react';
 import HomePageBanner from '../components/HomePageBanner';
 import HomePageDesign from '../components/HomePageDesign';
 import HomePageProducts from '../components/HomePageProducts';
-
-const HomePage = () => {
+import HomePageCards from '../components/HomePageCards';
+const HomePage = ({ addToCart }) => {
     return (
         <div>
             <HomePageBanner />
             <HomePageDesign />
-            <HomePageProducts />
+            <HomePageProducts addToCart={addToCart}/>
+            <HomePageCards />
         </div>
     );
 };

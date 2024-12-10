@@ -2,12 +2,8 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../assets/css/Navbar.css'; // Import the CSS file for styling
 
-const Navbar = () => {
+const Navbar = ({ cartItems, toggleCart }) => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-    const toggleMenu = () => {
-        setIsMenuOpen((prevState) => !prevState);
-    };
 
     const closeMenu = () => {
         setIsMenuOpen(false);
@@ -29,7 +25,7 @@ const Navbar = () => {
                 <div className="navbar-logo">3legant</div>
 
                 {/* Menu Icon for Small Screens */}
-                <div className="navbar-menu-icon" onClick={toggleMenu}>
+                <div className="navbar-menu-icon" onClick={() => setIsMenuOpen(!isMenuOpen)}>
                     <span className="navbar-menu-bar"></span>
                     <span className="navbar-menu-bar"></span>
                     <span className="navbar-menu-bar"></span>
@@ -46,7 +42,10 @@ const Navbar = () => {
                 {/* Right Side Icons */}
                 <div className="navbar-icons">
                     <span className="navbar-icon search-icon">&#128269;</span> {/* Search Icon */}
-                    <span className="navbar-icon bag-icon">&#128722;</span> {/* Bag Icon */}
+                    <span className="navbar-icon bag-icon" onClick={() => {
+                        console.log('Cart icon clicked');  // Log when the cart icon is clicked
+                        toggleCart();  // Toggle the cart visibility
+                    }}>&#128722;</span> {/* Bag Icon */}
                     <span className="navbar-icon account-icon">&#128100;</span> {/* Google Account Icon */}
                 </div>
             </div>

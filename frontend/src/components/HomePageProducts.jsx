@@ -3,13 +3,12 @@ import '../assets/css/HomePageProducts.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart } from '@fortawesome/free-regular-svg-icons';
 
-
 // Import Images
 import HomePageDesign1 from '../assets/images/HomePageDesign1.jpg';
 import HomePageDesign2 from '../assets/images/HomePageDesign2.jpg';
 import HomePageDesign3 from '../assets/images/HomePageDesign3.jpg';
 
-export default function HomePageProducts() {
+export default function HomePageProducts({ addToCart }) {
   const products = [
     { image: HomePageDesign1, name: 'Product 1', price: '5000', rating: 4 },
     { image: HomePageDesign2, name: 'Product 2', price: '6000', rating: 5 },
@@ -65,21 +64,20 @@ export default function HomePageProducts() {
           {products.map((product, index) => (
             <div className="product-card" key={index}>
               <div className="product-image">
-              <img src={product.image} alt={product.name} />
-              {/* Wishlist Icon */}
-              <div className="wishlist-icon">
-                <FontAwesomeIcon icon={faHeart} />
-              </div>
-            </div>
-              <div className="product-image">
                 <img src={product.image} alt={product.name} />
+                {/* Wishlist Icon */}
+                <div className="wishlist-icon">
+                  <FontAwesomeIcon icon={faHeart} />
+                </div>
               </div>
               <div className="labels">
                 <span className="new-label">New</span>
                 <span className="offer-label">-50%</span>
               </div>
               <div className="hover-content">
-                <button className="add-to-cart">Add to Cart</button>
+                <button className="add-to-cart" onClick={() => addToCart(product)}>
+                  Add to Cart
+                </button>
               </div>
               <div className="product-details">
                 <div className="star-rating">

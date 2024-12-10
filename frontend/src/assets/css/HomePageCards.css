@@ -1,0 +1,72 @@
+/* Container for the cards */
+.homepagecart-products-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1300px;
+    flex-wrap: nowrap; /* Prevent wrapping */
+    margin-bottom: 5%;
+    margin-left: 7%; /* Allow scrolling if content overflows */
+  }
+  
+  /* Style for individual product cards */
+  .homepagecart-product-card {
+    width: 23%; /* Ensure cards take up 23% of the container width */
+    background-color: #e2e0e0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Hover effect for product cards */
+  .homepagecart-product-card:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Icon styles */
+  .homepagecart-product-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: #333; /* Color for icons */
+  }
+  
+  /* Details inside the card */
+  .homepagecart-product-details {
+    padding-top: 10px;
+  }
+  
+  /* Product name (title) */
+  .homepagecart-product-name {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  /* Price or description */
+  .homepagecart-product-price {
+    display: block;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  /* Ensure the cards stay in a row even on smaller screens */
+  @media (max-width: 768px) {
+    .homepagecart-products-container {
+      gap: 10px; /* Reduce space between cards */
+    }
+  
+    .homepagecart-product-card {
+      width: 23%; /* Keep the width of each card the same */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .homepagecart-product-card {
+      width: 23%; /* Keep the width of each card */
+    }
+  }
+  

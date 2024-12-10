@@ -1,0 +1,118 @@
+/* Cart Popup */
+.cart-popup {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    background-color: white;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    z-index: 1000;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(100%); /* Initially hidden */
+}
+
+/* Show the cart when cartVisible is true */
+.cart-popup.show {
+    transform: translateX(0); /* Move it to visible */
+}
+
+/* Hide the cart when cartVisible is false */
+.cart-popup.hide {
+    transform: translateX(100%); /* Keep it offscreen */
+}
+
+.cart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-close-btn {
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 20px;
+}
+
+.cart-items {
+    margin-top: 20px;
+    overflow-y: auto;
+}
+
+.cartproduct-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.cartproduct-image img {
+    width: 50px;
+    height: 50px;
+}
+
+.cartproduct-name {
+    font-weight: bold;
+}
+
+.cartproduct-price {
+    color: #888;
+}
+
+.cartproduct-quantity {
+    display: flex;
+    align-items: center;
+}
+
+.remove-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
+.cart-summary {
+    margin-top: 40vh;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border-top: 1px solid #ddd;
+}
+
+.cart-summary-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    width: 100%;
+    text-decoration: underline;
+    
+}
+
+.cart-summary-buttons {
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.checkout-btn, .view-cart-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+}
+
+.view-cart-btn {
+    background-color: transparent;
+    color: #000;
+}
+
+.checkout-btn:hover, .view-cart-btn:hover {
+    opacity: 0.8;
+}
+
+.cart-summary-item span {
+    font-weight: bold;
+}
