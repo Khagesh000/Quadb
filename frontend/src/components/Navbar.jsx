@@ -35,7 +35,7 @@ const Navbar = ({ cartItems, toggleCart }) => {
                 <nav className={`navbar-links ${isMenuOpen ? 'navbar-links-open' : ''}`}>
                     <Link to="/" className="navbar-link" onClick={closeMenu}>Home</Link>
                     <Link to="/shop" className="navbar-link" onClick={closeMenu}>Shop</Link>
-                    <Link to="/products" className="navbar-link" onClick={closeMenu}>Products</Link>
+                    <Link to="/shop" className="navbar-link" onClick={closeMenu}>Products</Link>
                     <Link to="/contact" className="navbar-link" onClick={closeMenu}>Contact Us</Link>
                 </nav>
 
