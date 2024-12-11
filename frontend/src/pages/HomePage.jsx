@@ -4,6 +4,8 @@ import HomePageDesign from '../components/HomePageDesign';
 import HomePageProducts from '../components/HomePageProducts';
 import HomePageCards from '../components/HomePageCards';
 import HomePageFootImage from '../components/HomePageFootImage';
+import HomePageFootEnquiry from '../components/HomePageFootEnquiry';
+import Endbar from '../components/Endbar';
 
 
 const HomePage = ({ addToCart }) => {
@@ -14,6 +16,8 @@ const HomePage = ({ addToCart }) => {
             <HomePageProducts addToCart={addToCart}/>
             <HomePageCards />
             <HomePageFootImage />
+            <HomePageFootEnquiry />
+            <Endbar />
         </div>
     );
 };

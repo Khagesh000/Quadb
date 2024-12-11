@@ -6,6 +6,7 @@ import 'font-awesome/css/font-awesome.min.css';
 
 
 const HomePage = React.lazy(() => import('./pages/HomePage'));
+const ShopPage = React.lazy(() => import('./pages/ShopPage'));
 const AuthForm = React.lazy(() => import('./components/AuthForm'));
 const ProductList = React.lazy(() => import('./pages/ProductDetailsPage'));
 const Cart = React.lazy(() => import('./components/Cart'));
@@ -68,6 +69,7 @@ const App = () => {
             <Suspense fallback={<div className="spinner">Loading...</div>}>
                 <Routes>
                     <Route path="/" element={<HomePage addToCart={addToCart} />} />
+                    <Route path="/shop" element={<ShopPage addToCart={addToCart} />} />
                     <Route path="/login" element={<AuthForm />} />
                     <Route path="/Product" element={<ProductList />} />
                     <Route path="/cart" element={<Cart cartItems={cartItems} removeFromCart={removeFromCart} cartVisible={cartVisible} setCartVisible={setCartVisible} />} />

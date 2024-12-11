@@ -1,0 +1,61 @@
+/* ShopPageBanner Styles */
+.shoppagebanner-container {
+    position: relative;
+    width: 100%;
+    max-width: 1360px;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: #F5F6FA;
+  }
+  
+  .shoppagebanner-image {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+  }
+  
+  .shoppagebanner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: black; /* Black font for content */
+  }
+  
+  .shoppagebanner-breadcrumb {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .shoppagebanner-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .shoppagebanner-subtitle {
+    font-size: 1.2rem;
+    font-weight: normal;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .shoppagebanner-container {
+      height: 400px;
+    }
+  
+    .shoppagebanner-content {
+      font-size: 0.9rem;
+    }
+  
+    .shoppagebanner-title {
+      font-size: 1.5rem;
+    }
+  
+    .shoppagebanner-subtitle {
+      font-size: 1rem;
+    }
+  }
+  

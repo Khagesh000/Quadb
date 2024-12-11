@@ -1,0 +1,100 @@
+/* Endbar Styles */
+.endbar-container {
+    background-color: #141718;
+    color: white;
+    padding: 40px 10%;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Top Row */
+  .endbar-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Ensure responsiveness */
+  }
+  
+  .endbar-left {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  
+  .endbar-right {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .endbar-link {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 400;
+    transition: color 0.3s;
+  }
+  
+  .endbar-link:hover {
+    color: #f4a261; /* Highlight color on hover */
+  }
+  
+  /* Horizontal Line */
+  .endbar-divider {
+    border: 0;
+    border-top: 2px solid #3a3a3a;
+    margin: 15px 0;
+  }
+  
+  /* Bottom Row */
+  .endbar-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Ensure responsiveness */
+  }
+  
+  .endbar-bottom-left {
+    font-size: 0.8rem;
+  }
+  
+  .endbar-bottom-left a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  .endbar-bottom-left a:hover {
+    color: #f4a261; /* Highlight color on hover */
+  }
+  
+  /* Social Icons */
+  .endbar-bottom-right {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .endbar-icon {
+    font-size: 1.5rem;
+    color: white; /* White icons */
+    transition: color 0.3s;
+  }
+  
+  .endbar-icon:hover {
+    color: #f4a261; /* Highlight color on hover */
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .endbar-container {
+      padding: 20px 10%;
+    }
+  
+    .endbar-top, .endbar-bottom {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .endbar-right, .endbar-bottom-right {
+      justify-content: center;
+      gap: 10px;
+    }
+  }
+  

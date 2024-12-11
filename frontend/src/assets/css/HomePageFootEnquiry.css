@@ -1,0 +1,88 @@
+.HomePageFootEnquiry-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f9f9f9;
+  text-align: center;
+  gap: 20px;
+}
+
+.HomePageFootEnquiry-left{
+  position: relative;
+  object-position: left;
+  object-fit: cover;
+}
+
+.HomePageFootEnquiry-left,
+.HomePageFootEnquiry-right {
+  flex: 1;
+  max-width: 20%;
+  height: 400px; /* Set container height */
+  overflow: hidden; /* Ensures the image is cropped if it exceeds the container */
+  position: relative;
+}
+
+.HomePageFootEnquiry-image {
+  width: 100%;
+  height: 53vh;
+  object-fit: cover;
+  object-position: center bottom; /* Focus on the bottom portion of the image */
+  border-radius: 10px;
+}
+
+.HomePageFootEnquiry-center {
+  flex: 2;
+  max-width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.HomePageFootEnquiry-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0px;
+  color: #333;
+}
+
+.HomePageFootEnquiry-description {
+  font-size: 1rem;
+  margin-bottom: 40px;
+  color: #555;
+}
+
+.HomePageFootEnquiry-input-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.HomePageFootEnquiry-icon {
+  padding: 10px;
+  color: #555;
+  background-color: #f1f1f1;
+}
+
+.HomePageFootEnquiry-input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  outline: #555;
+  font-size: 1rem;
+  background-color: transparent;
+}
+
+.HomePageFootEnquiry-signup {
+  padding: 10px 20px;
+  border: none;
+  color: #333;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: 600;
+  background-color: transparent;
+}
+
+
